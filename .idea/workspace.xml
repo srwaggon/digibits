@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02db6bf2-8be9-4b8d-b3c3-537f4d4a5c12" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="digibits" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UJZnwTxrMnFOjsXlQ7EfrIALs7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.35346097" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="digibits" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="digibits" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="digibits.action" />
+      <recent name="digibits" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.BattleTest">
+    <configuration name="BattleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;digibits.BattleTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BattleTest.monstersCanRunOutOfMana" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;digibits.BattleTest.monstersCanRunOutOfMana&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BattleTest.monstersCanWait" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;digibits.BattleTest.monstersCanWait&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.BattleTest" />
+        <item itemvalue="Gradle.BattleTest.monstersCanWait" />
+        <item itemvalue="Gradle.BattleTest.monstersCanRunOutOfMana" />
+        <item itemvalue="Gradle.BattleTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02db6bf2-8be9-4b8d-b3c3-537f4d4a5c12" name="Default Changelist" comment="" />
+      <created>1575076828569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575076828569</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Auto_Import" timestamp="1575097487100">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Auto_Import/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575097487100" />
+    <state x="358" y="178" width="1010" height="684" key="#Project_Structure" timestamp="1575104896809">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="358" y="178" width="1010" height="684" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575104896809" />
+    <state x="552" y="178" key="#Updates" timestamp="1575079317300">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Updates/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575079317300" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575104924653">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575104924653" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1575107136047">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575107136047" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1575108055955">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108055955" />
+    <state x="829" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1575107848257">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="829" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575107848257" />
+    <state x="753" y="355" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1575107849164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="355" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575107849164" />
+    <state x="652" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575107929932">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="652" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575107929932" />
+    <state x="837" y="222" width="642" height="595" key="#xdebugger.evaluate" timestamp="1575105887046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="837" y="222" width="642" height="595" key="#xdebugger.evaluate/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575105887046" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1575081170343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575081170343" />
+    <state width="1921" height="266" key="GridCell.Tab.0.bottom" timestamp="1575108766813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108766813" />
+    <state width="1921" height="266" key="GridCell.Tab.0.center" timestamp="1575108766813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108766813" />
+    <state width="1921" height="266" key="GridCell.Tab.0.left" timestamp="1575108766813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108766813" />
+    <state width="1921" height="266" key="GridCell.Tab.0.right" timestamp="1575108766813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108766813" />
+    <state width="1921" height="266" key="GridCell.Tab.1.bottom" timestamp="1575108766813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="266" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108766813" />
+    <state width="1921" height="266" key="GridCell.Tab.1.center" timestamp="1575108766813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="266" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108766813" />
+    <state width="1921" height="266" key="GridCell.Tab.1.left" timestamp="1575108766813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="266" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108766813" />
+    <state width="1921" height="266" key="GridCell.Tab.1.right" timestamp="1575108766813">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="266" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575108766813" />
+    <state x="775" y="453" key="ReplaceDuplicatesPrompt" timestamp="1575103623764">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="775" y="453" key="ReplaceDuplicatesPrompt/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575103623764" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1575095954079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575095954079" />
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1575095390100">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575095390100" />
+    <state x="731" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1575097364185">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575097364185" />
+    <state x="690" y="275" width="540" height="499" key="extract.method.dialog" timestamp="1575103619194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" width="540" height="499" key="extract.method.dialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575103619194" />
+    <state x="591" y="222" width="737" height="596" key="find.popup" timestamp="1575095280052">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="591" y="222" width="737" height="596" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575095280052" />
+    <state x="342" y="131" key="new project wizard" timestamp="1576647224904">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="131" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1576647224904" />
+    <state x="666" y="138" key="refactoring.ChangeSignatureDialog" timestamp="1575107826198">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="138" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575107826198" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1575102811233">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575102811233" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575104547139">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575104547139" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="actor.getManaPoints()" language="JAVA" />
+        <watch expression="getManaPoints()" language="JAVA" />
+        <watch expression="getPower()" language="JAVA" />
+        <watch expression="getMana()" language="JAVA" />
+        <watch expression="actor.getPower()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
