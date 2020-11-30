@@ -66,7 +66,7 @@ class Dna {
         "  power: " + getPower() + ",\n" +
         "  resistance: " + getResistance() + ",\n" +
         "  speed: " + getSpeed() + ",\n" +
-        "  evasion: " + getEvasion() + ",\n" +
+        "  evasion: " + getEvasion() + "\n" +
         "}";
   }
 }
