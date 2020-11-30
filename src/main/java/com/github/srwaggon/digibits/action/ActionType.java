@@ -1,6 +1,6 @@
-package digibits.action;
+package com.github.srwaggon.digibits.action;
 
-import digibits.Monster;
+import com.github.srwaggon.digibits.Monster;
 
 public enum ActionType {
   PHYSICAL_ATTACK(new PhysicalAttack()),

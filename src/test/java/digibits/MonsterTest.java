@@ -1,5 +1,0 @@
-package digibits;
-
-class MonsterTest {
-
-}

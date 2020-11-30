@@ -1,14 +1,15 @@
-package digibits;
+package com.github.srwaggon.digibits;
 
 
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.UUID;
 
-import static digibits.action.ActionType.PHYSICAL_ATTACK;
-import static digibits.action.ActionType.SPECIAL_ATTACK;
-import static digibits.action.ActionType.WAIT;
+import static com.github.srwaggon.digibits.action.ActionType.PHYSICAL_ATTACK;
+import static com.github.srwaggon.digibits.action.ActionType.SPECIAL_ATTACK;
+import static com.github.srwaggon.digibits.action.ActionType.WAIT;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class BattleTest {
@@ -18,7 +19,7 @@ public class BattleTest {
   private Monster freya = new Monster("Freya", UUID.fromString("51368a98-58ea-4e1a-a500-c27c7b6ee9fd"));
   private Monster ort = new Monster("Ort", UUID.fromString("b813fd7c-4fff-4ba7-a720-4a2b1fbf1af5"));
 
-  @Before
+  @BeforeEach
   public void setUp() {
     System.out.println(sven);
     System.out.println(yarl);

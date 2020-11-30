@@ -1,6 +1,6 @@
-package digibits;
+package com.github.srwaggon.digibits;
 
-import digibits.action.ActionType;
+import com.github.srwaggon.digibits.action.ActionType;
 
 import static java.lang.String.format;
 

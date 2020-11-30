@@ -1,4 +1,4 @@
-package digibits;
+package com.github.srwaggon.digibits;
 
 import java.util.UUID;
 
