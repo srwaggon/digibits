@@ -1,14 +1,17 @@
-package com.github.srwaggon.digibits.application;
+package com.github.srwaggon.digibits.server;
 
-import com.github.srwaggon.digibits.Monster;
+import com.github.srwaggon.digibits.monster.Monster;
+import com.github.srwaggon.digibits.monster.MonsterClass;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Random;
 import java.util.UUID;
 
-@RestController
+@Controller
 public class MainController {
 
   @GetMapping("/")
@@ -17,8 +20,8 @@ public class MainController {
   }
 
   @GetMapping("/monster")
-  public String randomMonster() {
-    return new Monster(randomName(), UUID.randomUUID()).toString();
+  public @ResponseBody String randomMonster() {
+    return new Monster(new MonsterClass(UUID.randomUUID()), randomName()).toString();
   }
 
   private String randomName() {

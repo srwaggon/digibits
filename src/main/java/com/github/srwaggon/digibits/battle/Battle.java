@@ -1,6 +1,7 @@
-package com.github.srwaggon.digibits;
+package com.github.srwaggon.digibits.battle;
 
 import com.github.srwaggon.digibits.action.ActionType;
+import com.github.srwaggon.digibits.monster.Monster;
 
 import static java.lang.String.format;
 
