@@ -2,12 +2,13 @@ package com.github.srwaggon.digibits.monster;
 
 import com.github.srwaggon.digibits.util.Identified;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 public class Monster implements Identified<UUID> {
 
   private final MonsterClass monsterClass;
-  private UUID uuid;
+  private UUID id = UUID.randomUUID();
   private final String name;
   private int takenDamage = 0;
   private int manaSpent = 0;
@@ -65,11 +66,11 @@ public class Monster implements Identified<UUID> {
 
   @Override
   public UUID getId() {
-    return uuid;
+    return id;
   }
 
   @Override
-  public void setId(UUID uuid) {
-    this.uuid = uuid;
+  public void setId(UUID id) {
+    this.id = id;
   }
 }

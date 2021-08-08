@@ -3,7 +3,6 @@ package com.github.srwaggon.digibits.player;
 import com.google.common.collect.Lists;
 
 import com.github.srwaggon.digibits.monster.Monster;
-import com.github.srwaggon.digibits.util.Repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;
@@ -16,7 +15,7 @@ import org.springframework.stereotype.Service;
 public class PlayersService {
 
   @Autowired
-  private Repository<Player, String> playerRepository;
+  private PlayerRepository playerRepository;
 
   @EventListener
   public void createPlayerForUserOnInitialLogin(AuthenticationSuccessEvent authorizedEvent) {
@@ -34,11 +33,11 @@ public class PlayersService {
         .orElseThrow(this::newPlayerDoesNotExistException);
   }
 
-  public void addMonster(Player currentPlayer, Monster monster) {
-    playerRepository.findById(currentPlayer.getId())
-        .ifPresentOrElse(player -> {
-          player.getMonsters().add(monster.getId());
-          playerRepository.save(player);
+  public void addMonster(Player player, Monster monster) {
+    playerRepository.findById(player.getId())
+        .ifPresentOrElse(foundPlayer -> {
+          foundPlayer.getMonsters().add(monster.getId());
+          playerRepository.save(foundPlayer);
         }, () -> {
           throw newPlayerDoesNotExistException();
         });

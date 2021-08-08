@@ -1,39 +1,40 @@
 package com.github.srwaggon.digibits.server;
 
 import com.github.srwaggon.digibits.monster.Monster;
-import com.github.srwaggon.digibits.monster.MonsterClass;
+import com.github.srwaggon.digibits.monster.MonsterService;
+import com.github.srwaggon.digibits.player.Player;
+import com.github.srwaggon.digibits.player.PlayersService;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.Random;
+import java.util.List;
 import java.util.UUID;
 
 @Controller
 public class MainController {
 
+  @Autowired
+  private PlayersService playersService;
+
+  @Autowired
+  private MonsterService monsterService;
+
   @GetMapping("/")
-  public String index() {
+  public String index(Model model) {
+    Player currentPlayer = playersService.getCurrentPlayer();
+    List<UUID> monsterIds = currentPlayer.getMonsters();
+    if (monsterIds.isEmpty()) {
+      Monster monster = monsterService.newMonster();
+      monsterService.save(monster);
+      playersService.addMonster(currentPlayer, monster);
+    }
+
+    List<Monster> monsters = monsterService.getMonsters(currentPlayer);
+    model.addAttribute("monsters", monsters);
     return "index";
   }
 
-  @GetMapping("/monster")
-  public @ResponseBody String randomMonster() {
-    return new Monster(new MonsterClass(UUID.randomUUID()), randomName()).toString();
-  }
-
-  private String randomName() {
-    int leftLimit = 97; // letter 'a'
-    int rightLimit = 122; // letter 'z'
-    int targetStringLength = 10;
-    Random random = new Random();
-
-    String name = random.ints(leftLimit, rightLimit + 1)
-        .limit(targetStringLength)
-        .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
-        .toString();
-
-    return name.substring(0, 1).toUpperCase() + name.substring(1);
-  }
 }

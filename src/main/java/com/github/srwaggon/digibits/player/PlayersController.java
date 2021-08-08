@@ -24,7 +24,7 @@ public class PlayersController {
   private PlayersService playersService;
 
   @Autowired
-  private Repository<Player, String> playerRepository;
+  private PlayerRepository playerRepository;
 
   @GetMapping
   public List<Player> getAllPlayers() {

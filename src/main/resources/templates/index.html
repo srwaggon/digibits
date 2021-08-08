@@ -3,14 +3,32 @@
 <head lang="en">
     <meta charset="UTF-8"/>
     <title>ReactJS + Spring Data REST</title>
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/main.css"/>
 </head>
 <body>
 
-<img src="static/images\egg.gif" />
-<div id="react"></div>
+<img src="static/images/egg.gif"/>
 
-<script src="built/bundle.js"></script>
+<tbody th:each="monster: ${monsters}">
+<table>
+<tr>
+    <td>Name</td>
+    <td th:text="${monster.getName()}"/>
+</tr>
+<tr>
+    <td>ID</td>
+    <td th:text="${monster.getId()}"/>
+</tr>
+<!--<tr>-->
+<!--    <td>Health</td>-->
+<!--    <td th:text="${monster.getHealthPoints()}"/>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--    <td>Energy</td>-->
+<!--    <td th:text="${monster.getManaPoints()}"/>-->
+<!--</tr>-->
+</tbody>
+</table>
 
 </body>
 </html>
