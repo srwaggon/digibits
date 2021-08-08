@@ -1,13 +1,13 @@
 package com.github.srwaggon.digibits.monster;
 
-import java.util.stream.Collectors;
+import com.github.srwaggon.digibits.util.Identified;
 
-import lombok.Getter;
+import java.util.UUID;
 
-public class Monster {
+public class Monster implements Identified<UUID> {
 
   private final MonsterClass monsterClass;
-  @Getter
+  private UUID uuid;
   private final String name;
   private int takenDamage = 0;
   private int manaSpent = 0;
@@ -49,6 +49,10 @@ public class Monster {
     return getManaPoints() < monsterClass.getPower();
   }
 
+  public String getName() {
+    return name;
+  }
+
   @Override
   public String toString() {
     return "Monster{" +
@@ -57,5 +61,15 @@ public class Monster {
         ", takenDamage=" + takenDamage +
         ", manaSpent=" + manaSpent +
         '}';
+  }
+
+  @Override
+  public UUID getId() {
+    return uuid;
+  }
+
+  @Override
+  public void setId(UUID uuid) {
+    this.uuid = uuid;
   }
 }
