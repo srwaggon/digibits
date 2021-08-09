@@ -27,6 +27,11 @@
     <td>Energy</td>
     <td th:text="${monster.getEnergyPoints()}"/>
 </tr>
+<tr>
+    <td>Hunger</td>
+    <td th:text="${monster.getHunger()}"/>
+</tr>
+<button th:onclick="${monsterService.feed(monster, player)}">Feed</button>
 </tbody>
 </table>
 

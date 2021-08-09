@@ -13,6 +13,7 @@ public class Monster implements Identified<UUID> {
   private final String name;
   private int takenDamage = 0;
   private int energySpent = 0;
+  private int hunger = 10;
 
   public Monster(UUID speciesId, String name) {
     this.species = new Species(speciesId);
@@ -60,6 +61,14 @@ public class Monster implements Identified<UUID> {
 
   public String getName() {
     return name;
+  }
+
+  public void feed() {
+    hunger = Math.max(0, hunger - 1);
+  }
+
+  public int getHunger() {
+    return hunger;
   }
 
   @Override

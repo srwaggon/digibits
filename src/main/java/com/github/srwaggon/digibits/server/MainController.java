@@ -25,6 +25,8 @@ public class MainController {
   @GetMapping("/")
   public String index(Model model) {
     Player currentPlayer = playersService.getCurrentPlayer();
+    model.addAttribute("player", currentPlayer);
+
     List<UUID> monsterIds = currentPlayer.getMonsters();
     if (monsterIds.isEmpty()) {
       Monster monster = monsterService.newMonster();
@@ -34,6 +36,8 @@ public class MainController {
 
     List<Monster> monsters = monsterService.getMonsters(currentPlayer);
     model.addAttribute("monsters", monsters);
+
+    model.addAttribute("monsterService", monsterService);
     return "index";
   }
 

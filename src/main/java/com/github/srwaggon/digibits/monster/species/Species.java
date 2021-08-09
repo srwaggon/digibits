@@ -31,9 +31,9 @@ public class Species {
 
   private static void calculateAttributes() {
     addSharedAttribute(HEALTH, 0, 30);
-    addSharedAttribute(STAMINA, 5, 0);
+    addSharedAttribute(REGENERATION, 5, 0); // health regeneration
     addSharedAttribute(ENERGY, 10, 30);
-    addSharedAttribute(REGENERATION, 15, 0);
+    addSharedAttribute(STAMINA, 15, 0); // energy regeneration
     addSharedAttribute(STRENGTH, 20, 0);
     addSharedAttribute(DEFENSE, 25, 0);
     addSharedAttribute(POWER, 30, 0);
@@ -54,16 +54,16 @@ public class Species {
     return getValueOfAttribute(HEALTH);
   }
 
-  public int getStamina() {
-    return getValueOfAttribute(STAMINA);
+  public int getRegeneration() {
+    return getValueOfAttribute(REGENERATION);
   }
 
   public int getEnergy() {
     return getValueOfAttribute(ENERGY);
   }
 
-  public int getRegeneration() {
-    return getValueOfAttribute(REGENERATION);
+  public int getStamina() {
+    return getValueOfAttribute(STAMINA);
   }
 
   public int getStrength() {

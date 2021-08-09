@@ -48,4 +48,9 @@ public class MonsterService {
   public Monster save(Monster monster) {
     return monsterRepository.save(monster);
   }
+
+  public void feed(Monster monster, Player player) {
+    monster.feed();
+    save(monster);
+  }
 }
