@@ -1,6 +1,6 @@
-package com.github.srwaggon.digibits.monster;
+package com.github.srwaggon.digibits.monster.species;
 
-class Attribute {
+public class Attribute {
   private final int dnaIndex;
   private final int base;
 

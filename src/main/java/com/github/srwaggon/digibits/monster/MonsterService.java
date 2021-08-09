@@ -17,7 +17,7 @@ public class MonsterService {
   private MonsterRepository monsterRepository;
 
   public Monster newMonster() {
-    return new Monster(new MonsterClass(UUID.randomUUID()), randomName());
+    return new Monster(UUID.randomUUID(), randomName());
   }
 
   private String randomName() {

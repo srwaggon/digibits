@@ -1,11 +1,13 @@
-package com.github.srwaggon.digibits.monster;
+package com.github.srwaggon.digibits.monster.species;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-public class MonsterClass {
+public class Species {
+
+  private final Dna dna;
 
   public static final String HEALTH = "health";
   public static final String STAMINA = "stamina";
@@ -17,19 +19,17 @@ public class MonsterClass {
   public static final String RESISTANCE = "resistance";
   public static final String SPEED = "speed";
   public static final String EVASION = "evasion";
-
-  private final Dna dna;
   private static final Map<String, Attribute> sharedAttributes = new HashMap<>();
 
-  static { addSharedAttributes(); }
-
-  public MonsterClass(UUID dna) {
-    this.dna = new Dna(dna);
-
-    addSharedAttributes();
+  static {
+    calculateAttributes();
   }
 
-  private static void addSharedAttributes() {
+  public Species(UUID dna) {
+    this.dna = new Dna(dna);
+  }
+
+  private static void calculateAttributes() {
     addSharedAttribute(HEALTH, 0, 30);
     addSharedAttribute(STAMINA, 5, 0);
     addSharedAttribute(MANA, 10, 30);
@@ -46,9 +46,8 @@ public class MonsterClass {
     sharedAttributes.put(name, new Attribute(dnaIndex, base));
   }
 
-  static MonsterClass newMonster() {
-    UUID dna = UUID.randomUUID();
-    return new MonsterClass(dna);
+  public Dna getDna() {
+    return dna;
   }
 
   public int getHealth() {
@@ -62,6 +61,7 @@ public class MonsterClass {
   public int getMana() {
     return getValueOfAttribute(MANA);
   }
+
   public int getRegeneration() {
     return getValueOfAttribute(REGENERATION);
   }
@@ -101,4 +101,5 @@ public class MonsterClass {
         ", attributes{" + sharedAttributes.entrySet().stream().map(entry -> entry.getKey() + "=" + entry.getValue().value(dna)).collect(Collectors.joining(", ")) + "}" +
         '}';
   }
+
 }

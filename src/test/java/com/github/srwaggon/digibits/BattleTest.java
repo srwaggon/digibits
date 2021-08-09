@@ -1,10 +1,8 @@
 package com.github.srwaggon.digibits;
 
 
-
 import com.github.srwaggon.digibits.battle.Battle;
 import com.github.srwaggon.digibits.monster.Monster;
-import com.github.srwaggon.digibits.monster.MonsterClass;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,10 +16,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class BattleTest {
 
-  private final Monster sven = new Monster(new MonsterClass(UUID.fromString("4546d0e0-988a-4517-b79c-2d25ae4f7e7f")), "Sven");
-  private final Monster yarl = new Monster(new MonsterClass(UUID.fromString("2252bea3-5146-4f78-90ae-2180e74a0bb0")), "Yarl");
-  private final Monster freya = new Monster(new MonsterClass(UUID.fromString("51368a98-58ea-4e1a-a500-c27c7b6ee9fd")), "Freya");
-  private final Monster ort = new Monster(new MonsterClass(UUID.fromString("b813fd7c-4fff-4ba7-a720-4a2b1fbf1af5")), "Ort");
+  private final Monster sven = new Monster(UUID.fromString("4546d0e0-988a-4517-b79c-2d25ae4f7e7f"), "Sven");
+  private final Monster yarl = new Monster(UUID.fromString("2252bea3-5146-4f78-90ae-2180e74a0bb0"), "Yarl");
+  private final Monster freya = new Monster(UUID.fromString("51368a98-58ea-4e1a-a500-c27c7b6ee9fd"), "Freya");
+  private final Monster ort = new Monster(UUID.fromString("b813fd7c-4fff-4ba7-a720-4a2b1fbf1af5"), "Ort");
 
   @BeforeEach
   public void setUp() {

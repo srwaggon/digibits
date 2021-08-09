@@ -1,13 +1,19 @@
-package com.github.srwaggon.digibits.monster;
+package com.github.srwaggon.digibits.monster.species;
 
 import java.util.UUID;
 
-class Dna {
+public class Dna {
 
+  private UUID id;
   private final long dna;
 
-  public Dna(UUID dna) {
-    this.dna = dna.getMostSignificantBits();
+  public Dna(UUID id) {
+    this.id = id;
+    this.dna = id.getMostSignificantBits();
+  }
+
+  public UUID getId() {
+    return id;
   }
 
   public int select(int startingIndex) {

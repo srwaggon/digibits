@@ -1,53 +1,61 @@
 package com.github.srwaggon.digibits.monster;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.github.srwaggon.digibits.monster.species.Species;
 import com.github.srwaggon.digibits.util.Identified;
 
-import java.io.Serializable;
 import java.util.UUID;
 
 public class Monster implements Identified<UUID> {
 
-  private final MonsterClass monsterClass;
   private UUID id = UUID.randomUUID();
+  private Species species;
   private final String name;
   private int takenDamage = 0;
   private int manaSpent = 0;
 
-  public Monster(MonsterClass monsterClass, String name) {
-    this.monsterClass = monsterClass;
+  public Monster(UUID speciesId, String name) {
+    this.species = new Species(speciesId);
     this.name = name;
   }
 
+  @JsonIgnore
+  public Species getSpecies() {
+    return species;
+  }
+
   public int takeDamage(Monster attacker) {
-    int damageTaken = Math.max(1, attacker.monsterClass.getStrength() - monsterClass.getDefense());
+    int damageTaken = Math.max(1, attacker.species.getStrength() - species.getDefense());
     takenDamage += damageTaken;
     return damageTaken;
   }
 
   public int takeSpecialDamage(Monster attacker) {
-    int damageTaken = Math.max(1, attacker.monsterClass.getPower() - monsterClass.getResistance());
+    int damageTaken = Math.max(1, attacker.species.getPower() - species.getResistance());
     takenDamage += damageTaken;
     return damageTaken;
   }
 
   public int getHealthPoints() {
-    return Math.max(0, monsterClass.getHealth() - takenDamage);
+    return Math.max(0, species.getHealth() - takenDamage);
   }
 
+  @JsonIgnore
   public boolean isDead() {
     return getHealthPoints() <= 0;
   }
 
   public int getManaPoints() {
-    return monsterClass.getMana() - manaSpent;
+    return species.getMana() - manaSpent;
   }
 
   public void spendMana() {
-    manaSpent += monsterClass.getPower();
+    manaSpent += species.getPower();
   }
 
+  @JsonIgnore
   public boolean isTooTiredToDoSpecialAttack() {
-    return getManaPoints() < monsterClass.getPower();
+    return getManaPoints() < species.getPower();
   }
 
   public String getName() {
@@ -57,7 +65,7 @@ public class Monster implements Identified<UUID> {
   @Override
   public String toString() {
     return "Monster{" +
-        "monsterClass=" + monsterClass +
+        "monsterClass=" + species +
         ", name='" + name + '\'' +
         ", takenDamage=" + takenDamage +
         ", manaSpent=" + manaSpent +
@@ -72,5 +80,13 @@ public class Monster implements Identified<UUID> {
   @Override
   public void setId(UUID id) {
     this.id = id;
+  }
+
+  public UUID getSpeciesId() {
+    return getSpecies().getDna().getId();
+  }
+
+  public void setSpeciesId(UUID speciesId) {
+    this.species = new Species(speciesId);
   }
 }
