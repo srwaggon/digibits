@@ -1,6 +1,6 @@
-call scripts\clean.bat
+call scripts\docker\clean.cmd
 
 @echo off
 echo Building...
-call gradlew build
+wsl scripts/build.sh
 docker build --build-arg JAR_FILE=build/libs/*.jar -t swaggoner/digibits .
