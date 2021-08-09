@@ -11,7 +11,7 @@ public class Species {
 
   public static final String HEALTH = "health";
   public static final String STAMINA = "stamina";
-  public static final String MANA = "mana";
+  public static final String ENERGY = "energy";
   public static final String REGENERATION = "regeneration";
   public static final String STRENGTH = "strength";
   public static final String DEFENSE = "defense";
@@ -32,7 +32,7 @@ public class Species {
   private static void calculateAttributes() {
     addSharedAttribute(HEALTH, 0, 30);
     addSharedAttribute(STAMINA, 5, 0);
-    addSharedAttribute(MANA, 10, 30);
+    addSharedAttribute(ENERGY, 10, 30);
     addSharedAttribute(REGENERATION, 15, 0);
     addSharedAttribute(STRENGTH, 20, 0);
     addSharedAttribute(DEFENSE, 25, 0);
@@ -58,8 +58,8 @@ public class Species {
     return getValueOfAttribute(STAMINA);
   }
 
-  public int getMana() {
-    return getValueOfAttribute(MANA);
+  public int getEnergy() {
+    return getValueOfAttribute(ENERGY);
   }
 
   public int getRegeneration() {

@@ -13,8 +13,8 @@ class SpecialAttack implements Action {
       int damageTaken = receiver.takeSpecialDamage(actor);
       transcript.append(format("%s took %d damage.\n", receiver.getName(), damageTaken));
       transcript.append(format("%s is at %d health.\n", receiver.getName(), receiver.getHealthPoints()));
-      actor.spendMana();
-      transcript.append(format("%s has %d mana left.\n", actor.getName(), receiver.getManaPoints()));
+      actor.spendEnergy();
+      transcript.append(format("%s has %d energy left.\n", actor.getName(), receiver.getEnergyPoints()));
     }
   }
 

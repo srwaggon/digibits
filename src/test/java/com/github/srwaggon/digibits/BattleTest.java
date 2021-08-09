@@ -148,17 +148,17 @@ public class BattleTest {
         "Sven used a special attack!\n" +
         "Yarl took 1 damage.\n" +
         "Yarl is at 52 health.\n" +
-        "Sven has 49 mana left.\n" +
+        "Sven has 49 energy left.\n" +
         "Yarl used a special attack!\n" +
         "Sven took 1 damage.\n" +
         "Sven is at 44 health.\n" +
-        "Yarl has 45 mana left.\n" +
+        "Yarl has 45 energy left.\n" +
         ""
     );
   }
 
   @Test
-  public void monstersCanRunOutOfMana() {
+  public void monstersCanRunOutOfEnergy() {
     Battle battle = new Battle(sven, yarl);
 
     battle.round(SPECIAL_ATTACK, SPECIAL_ATTACK);
@@ -170,34 +170,34 @@ public class BattleTest {
         "Sven used a special attack!\n" +
         "Yarl took 1 damage.\n" +
         "Yarl is at 53 health.\n" +
-        "Sven has 49 mana left.\n" +
+        "Sven has 49 energy left.\n" +
         "Yarl used a special attack!\n" +
         "Sven took 1 damage.\n" +
         "Sven is at 52 health.\n" +
-        "Yarl has 45 mana left.\n" +
+        "Yarl has 45 energy left.\n" +
 
         "Sven used a special attack!\n" +
         "Yarl took 1 damage.\n" +
         "Yarl is at 52 health.\n" +
-        "Sven has 36 mana left.\n" +
+        "Sven has 36 energy left.\n" +
         "Yarl used a special attack!\n" +
         "Sven took 1 damage.\n" +
         "Sven is at 51 health.\n" +
-        "Yarl has 43 mana left.\n" +
+        "Yarl has 43 energy left.\n" +
 
         "Sven used a special attack!\n" +
         "Yarl took 1 damage.\n" +
         "Yarl is at 51 health.\n" +
-        "Sven has 23 mana left.\n" +
+        "Sven has 23 energy left.\n" +
         "Yarl used a special attack!\n" +
         "Sven took 1 damage.\n" +
         "Sven is at 50 health.\n" +
-        "Yarl has 41 mana left.\n" +
+        "Yarl has 41 energy left.\n" +
 
         "Sven used a special attack!\n" +
         "Yarl took 1 damage.\n" +
         "Yarl is at 50 health.\n" +
-        "Sven has 10 mana left.\n" +
+        "Sven has 10 energy left.\n" +
         "Yarl is too tired to attack!\n" +
         ""
     );

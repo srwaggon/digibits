@@ -12,7 +12,7 @@ public class Monster implements Identified<UUID> {
   private Species species;
   private final String name;
   private int takenDamage = 0;
-  private int manaSpent = 0;
+  private int energySpent = 0;
 
   public Monster(UUID speciesId, String name) {
     this.species = new Species(speciesId);
@@ -45,17 +45,17 @@ public class Monster implements Identified<UUID> {
     return getHealthPoints() <= 0;
   }
 
-  public int getManaPoints() {
-    return species.getMana() - manaSpent;
+  public int getEnergyPoints() {
+    return species.getEnergy() - energySpent;
   }
 
-  public void spendMana() {
-    manaSpent += species.getPower();
+  public void spendEnergy() {
+    energySpent += species.getPower();
   }
 
   @JsonIgnore
   public boolean isTooTiredToDoSpecialAttack() {
-    return getManaPoints() < species.getPower();
+    return getEnergyPoints() < species.getPower();
   }
 
   public String getName() {
@@ -68,7 +68,7 @@ public class Monster implements Identified<UUID> {
         "monsterClass=" + species +
         ", name='" + name + '\'' +
         ", takenDamage=" + takenDamage +
-        ", manaSpent=" + manaSpent +
+        ", energySpent=" + energySpent +
         '}';
   }
 
